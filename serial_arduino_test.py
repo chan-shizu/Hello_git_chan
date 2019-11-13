@@ -13,7 +13,7 @@ def gameA():
     ser.write('a'.encode())
     flag = 'none'
 
-    while(flag != 'A'.encode()):
+    while(flag != 'b'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
@@ -23,10 +23,10 @@ def gameA():
 def gameB():
     os.system('sudo chnod 777 /dev/ttyAM0')
     ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-    ser.write('b'.encode())
+    ser.write('c'.encode())
     flag = 'none'
 
-    while(flag != 'B'.encode()):
+    while(flag != 'd'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
@@ -36,10 +36,10 @@ def gameB():
 def gameC():
     os.system('sudo chnod 777 /dev/ttyAM0')
     ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-    ser.write('c'.encode())
+    ser.write('e'.encode())
     flag = 'none'
 
-    while(flag != 'C'.encode()):
+    while(flag != 'f'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
@@ -49,10 +49,10 @@ def gameC():
 def gameD():
     os.system('sudo chnod 777 /dev/ttyAM0')
     ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-    ser.write('d'.encode())
+    ser.write('g'.encode())
     flag = 'none'
 
-    while(flag != 'D'.encode()):
+    while(flag != 'h'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
@@ -62,10 +62,10 @@ def gameD():
 def gameE():
     os.system('sudo chnod 777 /dev/ttyAM0')
     ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-    ser.write('e'.encode())
+    ser.write('i'.encode())
     flag = 'none'
 
-    while(flag != 'E'.encode()):
+    while(flag != 'j'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
@@ -75,10 +75,10 @@ def gameE():
 def gameF():
     os.system('sudo chnod 777 /dev/ttyAM0')
     ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-    ser.write('f'.encode())
+    ser.write('k'.encode())
     flag = 'none'
 
-    while(flag != 'F'.encode()):
+    while(flag != 'l'.encode()):
         flag = ser.readline()
         time.sleep(2)
     
